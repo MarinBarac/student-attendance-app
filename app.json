@@ -29,16 +29,7 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-font",
-        {
-          "fonts": [
-            "node_modules/@expo-google-fonts/inter/Roboto_400Regular.ttf",
-            "node_modules/@expo-google-fonts/inter/Roboto_500Medium.ttf",
-            "node_modules/@expo-google-fonts/inter/Roboto_700Bold.ttf"
-          ]
-        }
-      ]
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
