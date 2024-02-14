@@ -20,9 +20,7 @@ const FooterBtn = ({ icon, iconActive, label, href }: IProps) => {
   const route = useRoute();
   const router = useRouter();
 
-  console.log(route);
-
-  const active = route.path === href;
+  const active = route.name === href;
 
   const styles = styling(active);
 
@@ -30,7 +28,7 @@ const FooterBtn = ({ icon, iconActive, label, href }: IProps) => {
     <TouchableOpacity
       style={styles.button}
       onPress={() =>
-        route.path !== href && router.push(`/${href}` as Route<string>)
+        !active && router.push(`/${href}` as Route<string>)
       }
     >
       <Image

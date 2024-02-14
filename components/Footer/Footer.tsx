@@ -1,18 +1,16 @@
-import { useRoute } from "@react-navigation/native";
 import { StyleSheet, View } from "react-native";
 import FooterBtn from "./FooterBtn";
 import icons from "@/assets/icons";
 import { COLORS } from "@/constants";
 
 const Footer = () => {
-  const route = useRoute();
   return (
     <View style={styles.container}>
       <FooterBtn
         icon={icons.home}
         iconActive={icons.homeActive}
         label="Home"
-        href=""
+        href="home"
       />
       <FooterBtn
         icon={icons.profile}
